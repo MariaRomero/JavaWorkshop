@@ -5,6 +5,8 @@ public class Person {
 	private final String name;
 	int age;
 	double height;
+    int balance = 300;
+    Cat cat;
 
 	public Person(String name, int age, double height) {
 		this.name= name;
@@ -21,7 +23,16 @@ public class Person {
 		name= p.name;
 		age= p.age;
 		height= p.height;
+        balance= p.balance;
 	}
+
+    public void addCat(Cat cat){
+        this.cat = cat;
+    }
+
+    public void buyCatFood(int amount) {
+        balance -= amount;
+    }
 
 	public int getAge() {
 		return age;
@@ -41,7 +52,7 @@ public class Person {
 
 
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", height=" + height + "]";
+		return "Person [name=" + name + ", age=" + age + ", height=" + height + "," + cat + "balance=" + balance +"]";
 	}
 
 	public void eat(int portionSize) {

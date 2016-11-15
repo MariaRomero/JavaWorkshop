@@ -15,11 +15,15 @@ public class House {
 		doors= new Door[numRooms];	/// 1.
 	}
 
-	public void addDoor(Door d) {	/// 1.
-		doors[numDoors++]= d;
+	public void addDoor(Door door) {	/// 1.
+		doors[numDoors++]= door;
 	}
 
-	/* 1. Original .toString() , for comparison:
+
+    public void setDoors(Door[] doors) {
+        this.doors = doors;
+    }
+/* 1. Original .toString() , for comparison:
 	public String toString() {
 		return "House [name=" + name + ", numRooms=" + numRooms + "]";
 	} */

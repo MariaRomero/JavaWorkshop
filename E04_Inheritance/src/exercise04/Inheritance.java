@@ -19,6 +19,10 @@ public class Inheritance {
 		//	  So create new classes for Animal and Dog, and add the `extends` keyword as appropriate
 		//	  All Animals have a weight and can eat, so move this state & behaviour from the Cat class into the Animal class.
 		//	  The `name` field might also be considered common but leave it in the Cat and Dog classes for now.
+    Cat myCat = new Cat("fifi", 10);
+    System.out.println(myCat);
+
+
 
 		// 2. Notice that the Cat constructor now has a problem whilst trying to set the  weight  field
 		//	  which is now part of the  Animal  class. 

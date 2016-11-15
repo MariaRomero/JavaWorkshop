@@ -56,6 +56,16 @@ public class ClassObjects {
 		// 7. If time, change the age field and getAge() method to something more suitable
 		//    hint: research the Java8 API for LocalDate
 
-	}
+        Cat myCat = new Cat("fifi", 10);
+        myCat.eat(5);
+        System.out.println(myCat);
+
+        Person maria = new Person("Maria", 21, 5.8);
+        maria.addCat(myCat);
+        maria.buyCatFood(50);
+        System.out.println(maria);
+
+
+    }
 
 }

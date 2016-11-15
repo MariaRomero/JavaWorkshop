@@ -13,9 +13,26 @@ public class ClassObjects {
 
 	public static void main(String[] args) {
 
-		// 1. Create a class  Person  to encapsulate the data from previous exercise (age, height) also name
+        Person maria = new Person("maria", 34, 5.2);
+        System.out.println(maria.age);
+        System.out.println(maria.height);
+        maria.eat(1);
+        System.out.println(maria.height);
+
+        Person jean = new Person("maria", 34, 5.2);
+
+        if (maria.equals(jean)) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        };
+        System.out.println(maria.hashCode());
+        System.out.println(jean.hashCode());
+
+        // 1. Create a class  Person  to encapsulate the data from previous exercise (age, height) also name
 		//    Make sure all data is private.
-		//	  Consider which data can change during the "Lifetime" of the Person (hint: final fields can be initialised in a constructor)
+		//	  Consider which data can change during the "Lifetime" of the Person (hint: final fields can
+		//    be initialised in a constructor)
 
 		// 2. Add suitable methods such as toString() and eat() (eating makes you taller!) 
 		//    Add suitable getXyz() and setXyz() methods

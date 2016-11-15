@@ -13,16 +13,16 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-		House h= new House( "Gables", 7 );
-		System.out.println( h );
+		House myHouse= new House( "Maria", 7 );
+		System.out.println( myHouse );
 
-
-		// 1. House has a Door (or more)
 		Door front= new Door( "Front", 82, true );
+        Door back= new Door( "Back", 160, true );
 		System.out.println( front );
-		h.addDoor( front );
-		h.addDoor( new Door( "Back", 72, false) );
-		System.out.println( h );	/* Dont expose / leak doors[] */
+        System.out.println( back );
+		myHouse.addDoor(front);
+		myHouse.addDoor(back);
+		System.out.println( myHouse );	/* Dont expose / leak doors[] */
 
 
 		// Slide: Design considerations: 
